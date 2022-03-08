@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Email Form</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <form onsubmit="sendEmail(); reset(); return false;">
+            <h3>KONTAKTA</h3>
+            <input type="text" id="name" placeholder="Ditt namn" required>
+            <input type="text" id="email" placeholder="Email" required>
+            <textarea id="message" rows="4" placeholder="Skriv ditt meddelande här.."></textarea>
+            <button type="submit">Skicka</button>
+        </form>
+    </div>
+    <script src="https://smtpjs.com/v3/smtp.js"></script>
+    <script src="main.js"></script>
+</body>
+</html>
